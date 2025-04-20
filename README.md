@@ -16,15 +16,16 @@ This project uses a Convolutional Neural Network (CNN) model to classify chest X
 ## 🧠 Model Details
 
 - **Architecture:** Sequential CNN with:
-  - 2 Convolutional layers
+  - 4 Convolutional layers (With L2 Regularization)
   - MaxPooling layers
   - Flatten + Dense layers
   - Output layer with sigmoid activation
+  - Dropout layer
 - **Loss Function:** Binary Crossentropy
 - **Optimizer:** Adam
-- **Input Size:** 150x150 (resized from original)
-- **Epochs:** 10 (adjustable)
-
+- **Input Size:** 224x224 (resized from original)
+- **Epochs:** 20 (adjustable)
+- **Batch Size:** 64
 ---
 
 ## 🛠️ Libraries Used
@@ -34,7 +35,7 @@ This project uses a Convolutional Neural Network (CNN) model to classify chest X
 - OpenCV (cv2)
 - Matplotlib
 - Google Colab (Drive access)
-
+- Sklearn
 ---
 
 ## 🚀 How to Run the Project
@@ -48,5 +49,4 @@ This project uses a Convolutional Neural Network (CNN) model to classify chest X
    drive.mount('/content/drive')
 5. Update the path to the dataset if needed.
 6. Run all cells in order to preprocess, train, and evaluate the model.
-
 
